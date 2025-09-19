@@ -115,7 +115,7 @@
                         <p data-aos="fade-left" data-aos-delay="400" style="font-family: 'Playfair Display', serif;">Althaia is a Greek word that means healing herb, which is the foundation of our company. All of us believe in One who heals and One who takes care of, and we all work towards the same goal, that is the better health of everyone in this planet. Our dedicated staff understands the requirements of customers and adheres to the regulatory standards to offer 100% customer satisfaction. We work constantly to keep improving on our products. Also, whatever we do are recorded and documented for future references. </p>
                         <a href="#about" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="600">Know More</a>
                     </div>
-                    <div class="stats-container row mt-5" data-aos="fade-up" data-aos-delay="800">
+                    <!-- <div class="stats-container row mt-5" data-aos="fade-up" data-aos-delay="800">
                         <div class=" col-6 col-md-3 stat-item text-center">
                             <div class="stat-content">
                                 <div class="stat-number " data-target="1800">0</div>
@@ -143,7 +143,7 @@
                             </div>
                             
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -180,81 +180,178 @@
     </section>
    
     <!-- Products Section -->
-    <section class="products-section py-5">
+    <section class="products-section py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Medical Categories</h2>
-            <div class="row g-4">
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-heart text-primary fa-3x mb-3"></i>
-                            <h3>Cardiology</h3>
-                            <p>Advanced cardiac care medications and treatments</p>
-                            <a href="products.html#cardiology" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-syringe text-primary fa-3x mb-3"></i>
-                            <h3>Diabetes</h3>
-                            <p>Comprehensive diabetes management solutions</p>
-                            <a href="products.html#diabetes" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-bone text-primary fa-3x mb-3"></i>
-                            <h3>Orthopedics</h3>
-                            <p>Joint and bone health medications</p>
-                            <a href="products.html#orthopedics" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-female text-primary fa-3x mb-3"></i>
-                            <h3>Gynecology</h3>
-                            <p>Women's health and wellness solutions</p>
-                            <a href="products.html#gynecology" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-shield-virus text-primary fa-3x mb-3"></i>
-                            <h3>Statin</h3>
-                            <p>Effective cholesterol management medications.</p>
-                            <a href="products.html#statin" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-shield-virus text-primary fa-3x mb-3"></i>
-                            <h3>Statin</h3>
-                            <p>Effective cholesterol management medications.</p>
-                            <a href="products.html#statin" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="product-card">
-                        <div class="product-content text-center">
-                            <i class="fas fa-star-of-life text-primary fa-3x mb-3"></i>
-                            <h3>Diabetes Care</h3>
-                            <p>Comprehensive diabetes management solutions.</p>
-                            <a href="products.html#diabetes-care" class="btn btn-outline-primary">View Products</a>
-                        </div>
-                    </div>
-                </div> -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">Medical Product Tree</h2>
+                <p class="lead text-muted">Explore our categories and products in an interactive view</p>
             </div>
+
+            <!-- Scoped styles for the product tree to preserve the site's theme -->
+            <style>
+              .product-tree .tree-container { position: relative; width: 100%; max-width: 1100px; margin: 0 auto; padding: 20px 0; }
+              .product-tree .main-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: #dceafc; transform: translateX(-50%); border-radius: 2px; z-index: 1; }
+
+              .product-tree .category-group { position: relative; text-align: center; margin: 40px 0; }
+              .product-tree .category-btn { display: inline-block; position: relative; z-index: 2; margin: 0; padding: 12px 28px; border-radius: 999px; border: 0; color: #fff; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); font-weight: 700; box-shadow: 0 8px 20px rgba(76,175,80,.2); transition: transform .2s, box-shadow .2s; }
+              .product-tree .category-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(76,175,80,.3); }
+
+              .product-tree .products { position: relative; max-height: 0; overflow: hidden; transition: max-height .6s ease, opacity .6s ease; opacity: 0; }
+              .product-tree .products.active { max-height: 3000px; opacity: 1; margin-top: 25px; }
+
+              .product-tree .product { position: relative; width: 46%; background: #fff; margin: 25px 0; padding: 16px 18px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); opacity: 0; transform: translateY(16px); z-index: 2; text-align: center; }
+              .product-tree .products.active .product { animation: fadeInUp .5s forwards; }
+              .product-tree .product.left { margin-right: auto; border-left: 5px solid var(--primary-color); }
+              .product-tree .product.right { margin-left: auto; border-right: 5px solid var(--secondary-color); }
+              
+              /* Branching lines and nodes */
+              .product-tree .product::before { content: ''; position: absolute; top: 50%; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--primary-color); z-index: 2; transform: translateY(-50%); }
+              .product-tree .product::after { content: ''; position: absolute; top: 50%; height: 3px; background: #dceafc; width: 3.5%; z-index: 1; transform: translateY(-50%); }
+              .product-tree .product.left::before { right: -7px; }
+              .product-tree .product.left::after { right: 0; }
+              .product-tree .product.right::before { left: -7px; }
+              .product-tree .product.right::after { left: 0; }
+
+              .product-tree .product-title { display: flex; align-items: center; justify-content: center; gap: 10px; }
+              .product-tree .product-title i { color: var(--primary-color); }
+              .product-tree .product-type { display: block; text-align: right; font-size: 0.8rem; color: #999; margin-top: -5px; }
+              .product-tree .product h3, .product-tree .product h2 { margin: 0; font-size: 1.4rem; color: var(--text-color); }
+              .product-tree .product p, .product-tree .product a { margin: 0; font-size: .95rem; color: #566573; }
+
+              @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+              /* Responsive */
+              @media (max-width: 768px) {
+                .product-tree .main-line {
+                  left: 25px;
+                  transform: translateX(0);
+                }
+                .product-tree .category-group {
+                  text-align: left;
+                  padding-left: 50px;
+                }
+                .product-tree .category-btn {
+                  display: inline-block;
+                }
+                .product-tree .product {
+                  width: 85%;
+                  margin: 25px 0 25px auto;
+                  text-align: left;
+                }
+                .product-tree .product.left,
+                .product-tree .product.right {
+                  margin-left: auto;
+                  margin-right: 0;
+                  border-left: 5px solid var(--primary-color);
+                  border-right: none;
+                }
+                .product-tree .product-title {
+                  justify-content: flex-start;
+                }
+                .product-tree .product-type {
+                  text-align: right;
+                }
+                .product-tree .product::before, 
+                .product-tree .product.right::before {
+                  left: -28px;
+                  right: auto;
+                }
+                .product-tree .product::after, 
+                .product-tree .product.right::after {
+                  left: -21px;
+                  right: auto;
+                  width: 21px;
+                }
+              }
+            </style>
+
+            <div class="product-tree" data-aos="fade-up" data-aos-delay="100">
+                <div class="tree-container">
+                    <div class="main-line"></div>
+
+                    <!-- Ortho Care Range -->
+                    <div class="category-group">
+                        <button class="category-btn" onclick="toggleProducts('ortho')">Ortho Care Range</button>
+                        <div id="ortho" class="products">
+                            <div class="product left">
+                                <div class="product-title">
+                                    <i class="fas fa-capsules"></i>
+                                    <h2>Tendo<b style="color: red; text-decoration:wavy;">big</b></h2>
+                                </div>
+                                <span class="product-type">Capsules</span>
+                                <p>Collagen (Type I, II, V & X) 200 mg, Chondroitin Sulphate 100 mg, Hyaluronic Acid 75 mg, Mucopolysaccharides 50 mg</p>
+                            </div>
+                            <div class="product right">
+                                <div class="product-title">
+                                    <i class="fas fa-tablets"></i>
+                                    <h2 style="color: darkgreen">Alserro <b style="color: green">Th8</b></h2>
+                                </div>
+                                <span class="product-type">Tablets</span>
+                                <p>Aceclofenac 100 mg + Thiocolchicoside 8 mg</p>
+                            </div>
+                            <div class="product left">
+                                <div class="product-title">
+                                    <i class="fas fa-tablets"></i>
+                                    <h2 style="color: purple">ALSERRO</h2>
+                                </div>
+                                <span class="product-type">Tablets</span>
+                                <p>Paracetamol IP 325 mg, Diclofenac Potassium BP 50 mg, Serratiopeptidase 10 mg</p>
+                            </div>
+                            <div class="product right">
+                                <div class="product-title">
+                                    <i class="fas fa-syringe"></i>
+                                    <h2>Alth-D3 60k</h2>
+                                </div>
+                                <span class="product-type">Nano Shot</span>
+                                <p>Cholecalciferol IP 60000 IU (Nano Shot)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gynaec Care IVF PCOS Range -->
+                    <div class="category-group">
+                        <button class="category-btn" onclick="toggleProducts('gynaec')">Gynaec Care IVF PCOS Range</button>
+                        <div id="gynaec" class="products">
+                            <div class="product left">
+                                <div class="product-title">
+                                    <i class="fas fa-pills"></i>
+                                    <h3>FertiPlus</h3>
+                                </div>
+                                <p>Fertility support supplement</p>
+                            </div>
+                            <div class="product right">
+                                <div class="product-title">
+                                    <i class="fas fa-pills"></i>
+                                    <h3>PCO-Balance</h3>
+                                </div>
+                                <p>For PCOS management</p>
+                            </div>
+                            <div class="product left">
+                                <div class="product-title">
+                                    <i class="fas fa-pills"></i>
+                                    <h3>OvaCare</h3>
+                                </div>
+                                <p>Ovarian health booster</p>
+                            </div>
+                            <div class="product right">
+                                <div class="product-title">
+                                    <i class="fas fa-pills"></i>
+                                    <h3>GynVit</h3>
+                                </div>
+                                <p>Multivitamin for women’s health</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+              function toggleProducts(id) {
+                const section = document.getElementById(id);
+                if (!section) return;
+                section.classList.toggle('active');
+              }
+            </script>
         </div>
     </section>
 
