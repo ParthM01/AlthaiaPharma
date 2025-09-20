@@ -6,81 +6,80 @@
     <meta name="theme-color" content="#ffffff">
     <title>Althaia Pharma - Leading Pharmaceutical Company</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" class="navbar-logo">
-                <div class="ms-3">
-                    <small class="tagline d-block">"Let's work on your good health <br> together."</small>
-                </div>
+                <small class="company-name" style="font-size: 1rem; font-weight: bold; font-family: 'Playfair Display', serif;">"Let's work on your good health <br> together."</small>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Products <i class="fas fa-chevron-down ms-1 small"></i></a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Products</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Products
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li class="dropdown-item dropdown-submenu">
-                                <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button"  aria-expanded="false">
-                                    Nutraceuticals
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Nutraceuticals</a>
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="products/al-multihenze.html">Al Multihenze</a></li>
                                     <li><a class="dropdown-item" href="products/Alciplus D.html">Alciplus D</a></li>
                                     <li><a class="dropdown-item" href="products/AL Q Boost.html">AL Q Boost</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-item dropdown-submenu">
-                                <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">
-                                    PPIs
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">PPIs</a>
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="products/Al Kool DSR.html">Al Kool DSR</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-item dropdown-submenu">
-                                <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">
-                                    Anti-Hypertensive
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Anti-Hypertensive</a>
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="products/Teliset 40.html">Teliset 40</a></li>
                                     <li><a class="dropdown-item" href="products/Teliset AM 5.html">Teliset AM 5</a></li>
                                     <li><a class="dropdown-item" href="products/Teliset AM 2.5.html">Teliset AM 2.5</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-item dropdown-submenu">
-                                <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">
-                                    Statin
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Statin</a>
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="products/Rozaglyn 10.html">Rozaglyn 10</a></li>
                                     <li><a class="dropdown-item" href="products/Rozaglyn 20.html">Rozaglyn 20</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-item dropdown-submenu">
-                                <a class="dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">
-                                    Diabetes Care
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Diabetes Care</a>
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="products/Glycaset M.html">Glycaset M</a></li>
                                 </ul>
                             </li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="products.html">View All Products</a></li>
-                        </ul>
+                        </ul> -->
+                    <!-- </li>  -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -150,40 +149,47 @@
     </header>
 
     <!-- Stats Section -->
-     <!-- Features Section -->
-    <section class="features-section py-4 bg-light">
+    <!-- Features Section -->
+    <section class="features-section py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm">
-                        <i class="fas fa-check-circle text-primary fa-3x mb-3"></i>
-                        <h4>Consistency</h4>
-                        <p>We are proud of our team who drives us to reach our final goal.</p>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 class="fw-bold">Unwavering Quality</h4>
+                        <p>Every product is a testament to our meticulous processes and our team's dedication to delivering consistent, reliable, and effective healthcare solutions.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm">
-                        <i class="fas fa-shield-alt text-primary fa-3x mb-3"></i>
-                        <h4>Trustworthiness</h4>
-                        <p>Our staff understands to the regulatory standards to offer 100% customer satisfaction.</p>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="fw-bold">Commitment to Trust</h4>
+                        <p>We build trust by upholding the highest regulatory standards and fostering a culture of transparency, ensuring complete confidence in everything we do.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm">
-                        <i class="fas fa-tags text-primary fa-3x mb-3"></i>
-                        <h4>Lowest cost</h4>
-                        <p>The approach followed is straightforward — to provide nothing but the best to the end customers.</p>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h4 class="fw-bold">Affordable Excellence</h4>
+                        <p>Our straightforward approach is to deliver the highest quality healthcare solutions at a fair price, making better health accessible to all.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
-    <!-- Products Section -->
-    <section class="products-section py-5 bg-light">
+
+      <!-- Products Section -->
+      <section class="products-section py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="display-4 fw-bold mb-3">Medical Product Tree</h2>
+                <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" class="title-logo-top mb-3" style="height: 80px;">
+                <h2 class="display-4 fw-bold mb-3">Our Products</h2>
                 <p class="lead text-muted">Explore our categories and products in an interactive view</p>
             </div>
 
@@ -651,338 +657,82 @@
               }
             </script>
         </div>
+        <!-- <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" class="title-logo me-3" style="height: 80px; center: 50%;" -->
     </section>
 
-    <!-- About Company Section -->
-    <section class="about-company py-5">
+    <!-- About Us Section -->
+    <section id="about" class="about-section py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="display-4 fw-bold text-primary mb-3">About Our Company</h2>
-                <div class="divider mx-auto"></div>
+                <h2 class="display-4 fw-bold mb-3 d-flex align-items-center justify-content-center flex-wrap">
+                    <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" class="title-logo me-3">
+                    <span class="text-nowrap">About Althaia Pharma</span>
+                    <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" class="title-logo ms-3">
+                </h2>
+                <p class="lead text-muted">Pioneering healthcare solutions for a healthier tomorrow.</p>
             </div>
-            
-            <div class="row align-items-center gy-4">
+            <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="about-content p-4 rounded-3 bg-white shadow-sm">
-                        <div class="quote-box mb-4 p-4 bg-primary bg-opacity-10 rounded-3">
-                            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="lead fw-bold mb-0">Let's work on your good health together</p>
-                            <!-- <i class="fas fa-quote-right right fa-2x text-primary mb-3"></i> -->
-                        </div>
+                    <div class="about-image-container shadow-lg rounded-3">
+                        <img src="assets/images/quality-assurance.jpg" alt="Quality Assurance at Althaia Pharma" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="about-content ps-lg-4 mt-4 mt-lg-0">
+                        <h3 class="fw-bold mb-3">Dedicated to Advancing Global Healthcare</h3>
+                        <p class="text-muted mb-4">Althaia Pharma stands at the forefront of the pharmaceutical industry, driven by a steadfast commitment to enhancing global health. Our name, derived from the ancient Greek word for "healing," embodies our core mission: to heal, care for, and improve the lives of people worldwide. We merge cutting-edge science with the highest ethical standards to deliver pharmaceutical products that are not only effective but also safe and accessible. Our state-of-the-art manufacturing facilities and rigorous quality control processes ensure that every product leaving our hands meets the most stringent global standards of excellence.</p>
                         
-                        <p class="text-muted">At Althaia Pharma, we're committed to excellence in healthcare. Our straightforward approach ensures the highest quality products for our customers. With a dedicated team driving our mission, we excel in business, fair trade, and manufacturing.</p>
-                        
-                        <div class="row g-4 mt-4">
-                            <div class="col-md-6">
-                                <div class="card border-0 bg-primary bg-opacity-10 h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold mb-4">Our Core Values</h5>
-                                        <ul class="list-unstyled value-list">
-                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Consistency</li>
-                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Trustworthiness</li>
-                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Excellence</li>
-                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Affordability</li>
+                        <div class="accordion" id="aboutAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fas fa-bullseye me-2 text-primary"></i> Our Mission
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        To pioneer the development and delivery of innovative, high-quality, and affordable pharmaceutical solutions. We are dedicated to addressing unmet medical needs and improving the health and well-being of communities across the globe through scientific excellence and a patient-first approach.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fas fa-eye me-2 text-primary"></i> Our Vision
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        To be a globally recognized and trusted leader in the pharmaceutical industry, earning the confidence of healthcare professionals and patients alike. We aim to be synonymous with innovation, quality, and unwavering ethical practices, shaping the future of healthcare for the better.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fas fa-star me-2 text-primary"></i> Our Core Values
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Quality:</strong> From raw material sourcing to final product delivery, we enforce stringent quality control measures to ensure superior safety and efficacy.</li>
+                                            <li><strong>Integrity:</strong> We operate with complete transparency and accountability, building lasting trust with our partners, customers, and the communities we serve.</li>
+                                            <li><strong>Innovation:</strong> Our dedicated R&D team is at the forefront of pharmaceutical science, relentlessly exploring new frontiers to address complex health challenges.</li>
+                                            <li><strong>Patient-Centricity:</strong> The well-being of patients is the ultimate focus of our work. We listen to their needs and strive to provide solutions that make a meaningful difference in their lives.</li>
+                                            <li><strong>Collaboration:</strong> We believe in the power of partnership, working closely with healthcare providers, researchers, and distributors to achieve shared health goals and amplify our impact.</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card border-0 bg-primary bg-opacity-10 h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold mb-4">Get in Touch</h5>
-                                        <p class="mb-4"><i class="fas fa-phone-alt text-primary me-2"></i>98673 33329</p>
-                                        <a href="contact.html" class="btn btn-primary rounded-pill px-4">Contact Us</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="about-image-wrapper position-relative rounded-3 overflow-hidden shadow-lg">
-                        <img src="assets/images/quality-assurance.jpg" alt="Professional Medical Team" class="img-fluid w-100" style="height: 500px; object-fit: cover;">
-                        <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(var(--bs-primary-rgb), 0.8), rgba(var(--bs-primary-rgb), 0.2))">
-                            <div class="text-center text-white p-4">
-                                <h3 class="fw-bold mb-3">Excellence in Healthcare</h3>
-                                <p class="mb-0">Committed to Quality and Innovation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pride of Professionals Section -->
-    <section class="pride-professionals py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Pride of Professional Service</h2>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-user-md text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Expert Doctors</h4>
-                        <p>Our team of experienced healthcare professionals ensures the highest quality of care.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-flask text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Quality Research</h4>
-                        <p>Continuous research and development to provide innovative healthcare solutions.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-certificate text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Certified Products</h4>
-                        <p>All our products meet international quality standards and certifications.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-headset text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">24/7 Support</h4>
-                        <p>Round-the-clock customer support to address all your healthcare needs.</p>
+                        <a href="about.html" class="btn btn-primary mt-4">Learn More About Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Frequently Asked Questions</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item" data-aos="fade-up">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    Why choose us?
-                                </button>
-                            </h3>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Our products are manufactured using Indian plants and herbs after a thorough research and experimentation to evolve with the highest quality.
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        Our Mission
-                                    </button>
-                                </h3>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Our mission is to provide the best possible healthcare solutions to our customers. We are committed to providing the highest quality of care and products to our customers.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        Our Vision
-                                    </button>
-                                </h3>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Our vision is to be the leading healthcare provider in the world. We are committed to providing the highest quality of care and products to our customers.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    List Of Our Products
-                                    </button>
-                                </h3>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <!-- Products Section -->
-                                        <section class="products-section py-5 bg-light">
-                                            <div class="container">
-                                                <div class="text-center mb-5" data-aos="fade-up">
-                                                    <h2 class="display-4 fw-bold mb-3">Our Products</h2>
-                                                    <p class="lead text-muted">Discover our comprehensive range of pharmaceutical solutions</p>
-                                                </div>
-
-                                                <div class="row g-4">
-                                                    <!-- Nutraceuticals -->
-                                                    <div class="col-lg-4" data-aos="fade-up">
-                                                        <div class="category-card bg-white rounded-4 shadow-sm p-4 h-100">
-                                                            <div class="category-icon mb-4">
-                                                                <span class="icon-circle bg-primary bg-opacity-10 text-primary">
-                                                                    <i class="fas fa-capsules fs-3"></i>
-                                                                </span>
-                                                            </div>
-                                                            <h3 class="h4 fw-bold mb-4">Nutraceuticals</h3>
-                                                            <div class="product-links">
-                                                                <a href="products/al-multihenze.html" class="product-link d-flex align-items-center mb-3">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Al Multihenze</span>
-                                                                </a>
-                                                                <a href="products/Alciplus D.html" class="product-link d-flex align-items-center mb-3">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Alciplus D</span>
-                                                                </a>
-                                                                <a href="products/AL Q Boost.html" class="product-link d-flex align-items-center">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>AL Q Boost</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- PPIs -->
-                                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                                                        <div class="category-card bg-white rounded-4 shadow-sm p-4 h-100">
-                                                            <div class="category-icon mb-4">
-                                                                <span class="icon-circle bg-primary bg-opacity-10 text-primary">
-                                                                    <i class="fas fa-pills fs-3"></i>
-                                                                </span>
-                                                            </div>
-                                                            <h3 class="h4 fw-bold mb-4">PPIs</h3>
-                                                            <div class="product-links">
-                                                                <a href="products/Al Kool DSR.html" class="product-link d-flex align-items-center">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Al Kool DSR</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Anti-Hypertensive -->
-                                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                                                        <div class="category-card bg-white rounded-4 shadow-sm p-4 h-100">
-                                                            <div class="category-icon mb-4">
-                                                                <span class="icon-circle bg-primary bg-opacity-10 text-primary">
-                                                                    <i class="fas fa-heartbeat fs-3"></i>
-                                                                </span>
-                                                            </div>
-                                                            <h3 class="h4 fw-bold mb-4">Anti-Hypertensive</h3>
-                                                            <div class="product-links">
-                                                                <a href="products/Teliset 40.html" class="product-link d-flex align-items-center mb-3">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Teliset 40</span>
-                                                                </a>
-                                                                <a href="products/Teliset AM 5.html" class="product-link d-flex align-items-center mb-3">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Teliset AM 5</span>
-                                                                </a>
-                                                                <a href="products/Teliset AM 2.5.html" class="product-link d-flex align-items-center">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Teliset AM 2.5</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Statin -->
-                                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                                                        <div class="category-card bg-white rounded-4 shadow-sm p-4 h-100">
-                                                            <div class="category-icon mb-4">
-                                                                <span class="icon-circle bg-primary bg-opacity-10 text-primary">
-                                                                    <i class="fas fa-shield-virus fs-3"></i>
-                                                                </span>
-                                                            </div>
-                                                            <h3 class="h4 fw-bold mb-4">Statin</h3>
-                                                            <div class="product-links">
-                                                                <a href="products/Rozaglyn 10.html" class="product-link d-flex align-items-center mb-3">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Rozaglyn 10</span>
-                                                                </a>
-                                                                <a href="products/Rozaglyn 20.html" class="product-link d-flex align-items-center">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Rozaglyn 20</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Diabetes Care -->
-                                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                                                        <div class="category-card bg-white rounded-4 shadow-sm p-4 h-100">
-                                                            <div class="category-icon mb-4">
-                                                                <span class="icon-circle bg-primary bg-opacity-10 text-primary">
-                                                                    <i class="fas fa-hand-holding-medical fs-3"></i>
-                                                                </span>
-                                                            </div>
-                                                            <h3 class="h4 fw-bold mb-4">Diabetes Care</h3>
-                                                            <div class="product-links">
-                                                                <a href="products/Glycaset M.html" class="product-link d-flex align-items-center">
-                                                                    <i class="fas fa-chevron-right me-2 text-primary"></i>
-                                                                    <span>Glycaset M</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- CTA Card -->
-                                                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                                                        <div class="category-card bg-primary bg-gradient text-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column justify-content-between">
-                                                            <div>
-                                                                <div class="category-icon mb-4">
-                                                                    <span class="icon-circle bg-white text-primary">
-                                                                        <i class="fas fa-phone-alt fs-3"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <h3 class="h4 fw-bold mb-3">Need Assistance?</h3>
-                                                                <p class="mb-4">Contact our team for product information or bulk orders</p>
-                                                            </div>
-                                                            <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <div class="contact-card p-5 rounded-4 bg-white shadow-sm">
-                        <i class="fas fa-comments text-primary fa-3x mb-4"></i>
-                        <h2 class="display-5 fw-bold mb-3">Have Questions?</h2>
-                        <p class="lead text-muted mb-4">We're here to help! Reach out to our team for any inquiries about our products or services.</p>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a href="contact.html" class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3 d-inline-flex align-items-center">
-                                <i class="fas fa-phone-alt me-2"></i>
-                                Contact Us
-                            </a>
-                            <a href="tel:9867333329" class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3 d-inline-flex align-items-center">
-                                <i class="fas fa-phone-alt me-2"></i>
-                                Call Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer pt-5 pb-4 bg-forest text-light">
