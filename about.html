@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Althaia Pharma</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="header-solid">
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <h1 class="h3 mb-0">Althaia Pharma</h1>
+                <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" class="navbar-logo">
+                <small class="company-name" style="font-size: 1rem; font-weight: bold; font-family: 'Playfair Display', serif;">"Let's work on your good health <br> together."</small>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Our Products</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -28,73 +33,94 @@
         </div>
     </nav>
 
-    <!-- About Header -->
-    <header class="bg-light py-5">
-        <div class="container">
-            <h1 class="display-4">About Althaia Pharma</h1>
-            <p class="lead">Leading the way in pharmaceutical innovation</p>
+    <!-- About Hero Section -->
+    <header class="about-hero-section">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold" data-aos="fade-up">Our Commitment to a Healthier World</h1>
+            <p class="lead mt-3" data-aos="fade-up" data-aos-delay="100">Discover the story, mission, and leadership that drive Althaia Pharma forward.</p>
         </div>
     </header>
 
-    <!-- About Content -->
-    <section class="py-5">
+    <!-- Story, Mission, Vision Section -->
+    <section class="story-mission-vision-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <img src="assets/images/about-hero.jpg" alt="About Althaia Pharma" class="img-fluid rounded mb-4" style="width: 100%; height: 300px; object-fit: cover;">
-                    <h2>Our Story</h2>
-                    <p class="mb-4">Althaia Pharma has been at the forefront of pharmaceutical innovation for over two decades. Our commitment to quality, research, and patient care has made us a trusted name in the healthcare industry.</p>
-                    
-                    <h2>Our Mission</h2>
-                    <p class="mb-4">To improve global health through innovative pharmaceutical solutions while maintaining the highest standards of quality and safety.</p>
+            <div class="row g-5">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="info-card h-100">
+                        <div class="info-icon"><i class="fas fa-book-open"></i></div>
+                        <h3 class="fw-bold">Our Story</h3>
+                        <p>Born from a vision to make quality healthcare accessible, Althaia Pharma began its journey with a commitment to healing. Our name, rooted in the Greek word for 'to heal,' is a constant reminder of our purpose. We have grown from a passionate startup into a trusted pharmaceutical leader, driven by science, integrity, and a deep sense of responsibility to the communities we serve.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-card h-100">
+                        <div class="info-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3 class="fw-bold">Our Mission</h3>
+                        <p>To pioneer, develop, and deliver innovative, high-quality, and affordable pharmaceutical solutions. We are dedicated to addressing unmet medical needs and improving the health and well-being of communities across the globe through scientific excellence and a patient-first approach.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-card h-100">
+                        <div class="info-icon"><i class="fas fa-eye"></i></div>
+                        <h3 class="fw-bold">Our Vision</h3>
+                        <p>To be a globally recognized and trusted leader in the pharmaceutical industry, earning the confidence of healthcare professionals and patients alike. We aim to be synonymous with innovation, quality, and unwavering ethical practices, shaping the future of healthcare for the better.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <h2>Our Values</h2>
-                    <div class="row g-4 mt-3">
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h4>Innovation</h4>
-                                    <p>Continuously pushing boundaries in pharmaceutical research</p>
-                                </div>
+    <!-- Leadership Section -->
+    <section class="leadership-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Meet Our Directors</h2>
+                <p class="lead text-muted">Guided by experience, driven by passion.</p>
+            </div>
+            <div class="row justify-content-center g-4">
+                <!-- Bhavesh Tiwari Profile -->
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="director-card">
+                        <div class="row g-0">
+                            <div class="col-md-4 director-image-container">
+                                <img src="assets/images/bhavesh-tiwari.jpg" alt="Bhavesh Tiwari" class="img-fluid director-image">
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100">
+                            <div class="col-md-8">
                                 <div class="card-body">
-                                    <h4>Quality</h4>
-                                    <p>Maintaining the highest standards in all our products</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h4>Integrity</h4>
-                                    <p>Operating with transparency and ethical principles</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h4>Patient Care</h4>
-                                    <p>Putting patients' needs at the center of everything we do</p>
+                                    <div class="director-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <h3 class="card-title fw-bold">Bhavesh Tiwari</h3>
+                                    <h5 class="card-subtitle mb-3 text-muted">Director</h5>
+                                    <p class="card-text">As I reflect on my journey in the pharmaceutical industry spanning over 18 years, I am filled with gratitude for the opportunities and experiences that have shaped my professional trajectory. From my humble beginnings as a Bachelor of Pharmacy graduate to my previous role as a seasoned pharmaceutical professional at Johnson & Johnson, every step has been a learning curve, enriching me with invaluable insights and expertise across diverse therapeutic domains.</p>
+                                    <p class="card-text">My journey commenced at USV, where I cultivated foundational knowledge in diabetes and cardiology. Subsequently, my tenure at Pfizer broadened my horizons, focusing extensively on diabetes management. Transitioning to Bristol Myers Squibb further enriched my experience, allowing me to explore the realms of cardiology and oncology. Today, at Althaia Pharma, I am privileged to contribute across a spectrum of therapeutic areas, including diabetes, central nervous system disorders, orthopedics, and oncology.</p>
+                                    <p class="card-text">As we embark on the next phase of our journey, I am confident in our collective ability to drive innovation, enhance patient outcomes, and foster collaborative partnerships. Let us continue to push boundaries, embrace challenges, and make a meaningful difference in the lives of millions worldwide.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>Key Facts</h3>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">✓ 20+ Years of Experience</li>
-                                <li class="mb-3">✓ Global Presence</li>
-                                <li class="mb-3">✓ ISO Certified</li>
-                                <li class="mb-3">✓ State-of-the-art Facilities</li>
-                                <li class="mb-3">✓ Dedicated Research Team</li>
-                            </ul>
+                <!-- Jay Raval Profile -->
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="director-card">
+                        <div class="row g-0">
+                            <div class="col-md-8 order-md-1">
+                                <div class="card-body text-md-end">
+                                    <div class="director-social justify-content-start">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <h3 class="card-title fw-bold">Jay Raval</h3>
+                                    <h5 class="card-subtitle mb-3 text-muted">Director</h5>
+                                    <p class="card-text">[Awaiting profile information for Jay Raval. This section will be updated with a detailed biography covering his extensive experience, contributions to the pharmaceutical industry, and his vision for Althaia Pharma's future.]</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 order-md-2 director-image-container">
+                                <img src="assets/images/jay-raval.jpg" alt="Jay Raval" class="img-fluid director-image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,20 +129,58 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light py-4">
+    <footer class="footer pt-5 pb-4 bg-forest text-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 Althaia Pharma. All rights reserved.</p>
+            <div class="row gy-4 justify-content-between align-items-start text-center text-lg-start">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-company pe-lg-5">
+                        <img src="assets/images/logo-removebg-preview.png" alt="Althaia Pharma Logo" style="height: 120px;" class="footer-logo circular-logo mb-4"/>
+                        <p class="mb-4">At Althaia Pharma, we're dedicated to improving lives through innovative healthcare solutions. Our commitment to quality and customer well-being drives everything we do.</p>
+                        <div class="social-links">
+                            <a href="#" class="me-3 text-black"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-3 text-black"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-end">
-                    <a href="#" class="me-3">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                <div class="col-lg-3 col-md-6 offset-lg-1 text-black">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html" class="text-black text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-black text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-black text-decoration-none">Products</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-black text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 text-black">
+                    <h5 class="mb-4">Contact</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>ALTHAIA PHARMA LLP: Office No.5, Ram Kutir Building, Indralok Phase 5, Near Tapovan School
+                        Rj Patil Road, Bhayander E, Thane Zone 2, Pin Code : 401105 </p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>athaiapharma94@gmail.com</p>
+                    <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 98765 43210</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2025 Althaia Pharma. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-light">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
